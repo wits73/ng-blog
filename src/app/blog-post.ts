@@ -1,5 +1,5 @@
 export class BlogPost {
-  constructor(private title: string, private summary: string) {
+  constructor(public title: string, public summary: string) {
   }
 
 }
