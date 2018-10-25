@@ -1,3 +1,4 @@
+import { BlogDataService } from './blog-data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,6 +21,7 @@ import { PaginatorComponent } from './paginator/paginator.component';
   ],
   providers: [
     TruncatePipe,
+    BlogDataService
   ],
   bootstrap: [AppComponent]
 })
