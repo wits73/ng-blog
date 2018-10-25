@@ -1,6 +1,10 @@
 <app-blog-post-title
-  *ngFor="let post of blogPosts"
+  *ngFor="let post of blogPosts[currentPage]"
   [post]="post">
 </app-blog-post-title>
+<app-paginator
+  [numberOfPages]="blogPosts.length"
+  (pageNumberClick)="updatePage($event)">
+</app-paginator>
 
 

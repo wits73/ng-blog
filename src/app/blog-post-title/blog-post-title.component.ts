@@ -9,10 +9,16 @@ import { TruncatePipe } from '../truncate.pipe';
 export class BlogPostTitleComponent implements OnInit {
 
   @Input() post: BlogPost;
+  fullSummary: string;
 
   constructor(private truncatePipe: TruncatePipe) { }
 
   ngOnInit() {
+    this.fullSummary = this.post.summary;
     this.post.summary = this.truncatePipe.transform(this.post.summary, 10);
+  }
+
+  showFullSummary() {
+    this.post.summary = this.fullSummary;
   }
 }
