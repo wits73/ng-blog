@@ -21,4 +21,5 @@ export class BlogPostTitleComponent implements OnInit {
   showFullSummary() {
     this.post.summary = this.fullSummary;
   }
+
 }
