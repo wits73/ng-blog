@@ -1,10 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { BlogPost } from './../blog-post';
 import { TruncatePipe } from '../truncate.pipe';
 @Component({
   selector: 'app-blog-post-title',
   templateUrl: './blog-post-title.component.html',
-  styleUrls: ['./blog-post-title.component.scss']
+  styleUrls: ['./blog-post-title.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BlogPostTitleComponent implements OnInit {
 
