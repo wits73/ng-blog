@@ -1,5 +1,9 @@
-<a href="#" (click)="exapndAll()">Expand All</a>
-
+<p>
+  <a href="#" (click)="exapndAll()">Expand All</a>
+</p>
+<p>
+  <a href="#" (click)="favAll()">Favorite All</a>
+</p>
 <app-blog-post-title
   #tile
   *ngFor="let post of blogPosts[currentPage]"
